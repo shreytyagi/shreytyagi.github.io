@@ -1,48 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/1.css">
-    <link href="css/2.css" rel="stylesheet">
-
-    <title>Shrey Tyagi</title>
-</head>
-
-<body>
-    <br>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Shrey Tyagi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Downloads
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="mysoftwares.html">My Softwares</a>
-                <a class="dropdown-item" href="#">My Music</a>
-                <a class="dropdown-item" href="#">Others</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    <hr noshade color="white">Contact me on:
-    <br>
     <a href="whatsapp://send?text=Hi Shrey!&phone=+918528606007">
         <img src="social_logos/whatsapp.png" width="30px" height="30px" alt="WhatsApp" title="WhatsApp" hspace="5" vspace="5" align="middle">
     </a>
@@ -56,18 +11,14 @@
         <img alt="WhatsApp" src="social_logos/gmail.png" width="30px" height="30px" alt="Gmail" title="Gmail" hspace="5" vspace="5"
             align="middle">
     </a>
-    <a href="https://t.me/shreytyagi">
-        <img alt="Telegram" src="social_logos/telegram.png" width="30px" height="30px" alt="Telegram" title="Telegram" hspace="5" vspace="5"
-            align="middle">
-    </a>
     <a href="https://join.skype.com/invite/MFroZNBJ2604">
         <img src="social_logos/skype.png" width="30px" height="30px" alt="Skype" title="Skype" hspace="5" vspace="5" align="middle">
     </a>
-    <a href="https://m.me/iamshreytyagi">
+    <a href="">
         <img src="social_logos/fbmessenger.png" width="30px" height="30px" alt="FB Messenger" title="FB Messenger" hspace="5" vspace="5"
             align="middle">
     </a>
-    <a href="https://hike.li/iamshreytyagi">
+    <a href="">
         <img src="social_logos/hike.png" width="30px" height="30px" alt="Hike" title="Hike" hspace="5" vspace="5" align="middle">
     </a>
     <a href="">
@@ -107,7 +58,7 @@
     <a href="https://www.reddit.com/u/shreytyagi?utm_source=reddit-android">
         <img src="social_logos/reddit.png" width="30px" height="30px" alt="Reddit" title="Reddit" hspace="5" vspace="5" align="middle">
     </a>
-    <a href="https://gotinder.com/@shreytyagi">
+    <a href="https://go.tinder.com/qpmXjFoqziY-Shrey">
         <img src="social_logos/tinder.png" width="30px" height="30px" alt="Tinder" title="Tinder" hspace="5" vspace="5" align="middle">
     </a>
     <a href="https://shreytyagi.tumblr.com">
@@ -159,8 +110,8 @@
     <a href="https://www.musical.ly/h5/share/usr/300133736258490368.html">
         <img src="social_logos/tiktok.png" width="30px" height="30px" alt="TikTok" title="TikTok" hspace="5" vspace="5" align="middle">
     </a>
-    <a href="https://share.like-video.com/live/share/profile_1773321184_2103111754?c=cp&b=149966489&l=en&t=0">
-        <img src="social_logos/like.png" width="30px" height="30px" alt="Like" title="Like" hspace="5" vspace="5" align="middle">
+    <a href="">
+        <img src="social_logos/like.png" width="30px" height="30px" alt="like" title="like" hspace="5" vspace="5" align="middle">
     </a>
     <a href="">
         <img src="social_logos/imgur.png" width="30px" height="30px" alt="Imgur" title="Imgur" hspace="5" vspace="5" align="middle">
@@ -211,10 +162,3 @@
     <a href="">
         <img src="social_logos/paypal.png" width="30px" height="30px" alt="PayPal" title="PayPay" hspace="5" vspace="5" align="middle">
     </a>
-
-    <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
-    <script src="bootstrap/popper.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
-</body>
-
-</html>

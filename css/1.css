@@ -106,3 +106,8 @@ margin-top: 2px;
     outline: none;
     outline-offset: 0px;
 }
+
+.custom {
+    width: 280px !important;
+    text-align: left;
+}
