@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/scrrescalc.css">
+        <script src="js/scrrescalc.js"></script>
+        <title>Cine Optimum Scr Res Calc</title>
+    </head>
+    <body>
+        <center>
+        <b>CINEMA OPTIMUM SCREEN RESOLUTION CALCULATOR</b>
+        <p id="1">
+            <table rules="all" cellpadding="4" border="1">
+            <tr>
+                <td align="justify">
+                    Distance of closest seat from screen - 
+                </td>
+                <td colspan="3" style="text-align:justify">
+                    <textarea id="3" rows="1" cols="13" maxlength="12"></textarea>
+                </td>
+                <td rowspan="2">
+                    <select id="2">
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="in">in</option>
+                        <option value="ft" selected="selected">ft</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="justify">
+                    Distance of farthest seat from screen - 
+                </td>
+                <td colspan="3" style="text-align:justify">
+                    <textarea id="4" rows="1" cols="13" maxlength="12"></textarea>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    Display Aspect Ratio - 
+                </td>
+                <td align=left>
+                    <textarea id="10" rows="1" cols="4" maxlength="4" class="center">16</textarea>
+                </td>
+                <td align=center>
+                    :
+                </td>
+                <td align=right>
+                    <textarea id="11" rows="1" cols="4" maxlength="4" class="center">9</textarea>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    Display Diagnol -
+                </td>
+                <td colspan="3">
+                    <textarea id="12" rows="1" cols="13" maxlength="12"></textarea>
+                </td>
+                <td>
+                    <select id="14">
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="in" selected="selected">in</option>
+                        <option value="ft">ft</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Average Distance from Screen is -
+                </td>
+                <td colspan="4">
+                    <b id="5"></b> <b id="6"></b><b id="20"></b> <b id="21"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Display Dimensions is -
+                </td>
+                <td colspan="4">
+                    <b id="16"></b><b id="17"></b><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FOV is -
+                </td>
+                <td colspan="4">
+                    <b id="22"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Required Pixels -
+                </td>
+                <td colspan="4">
+                    <b id="23"></b>
+                </td>
+            </tr>
+        </table>
+        </p>
+    <button id="9" onClick="endless()">Calculate</button>
+    </center>
+    </body>
+</html>
