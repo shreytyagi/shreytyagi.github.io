@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<style>
+		input[type=number]{
+			width: 55px;
+		}
+		input[type=number].small{
+			width: 45px;
+		}
+		input[type=number].small2{
+			width: 34px;
+		}
+		select{
+			width: 125px;
+		}
+	</style>
+</head>
+<body>
+
+<h2>Uncompressed Video Size Calculator</h2>
+
+<div ng-app="" ng-init="h=1080;w=1920;f=24;vb=8;th=0;tm=0;ts=0;c=2;s=48000;ab=16;pf=0.5">
+	<table rules="all" border="1">
+	<tr><td>Video Resolution</td><td><input type="number" ng-model="h"> <b>×</b> <input type="number" ng-model="w"></td></tr>
+	<tr><td>Video FrameRate</td><td><select ng-model="f"><option value=23.976023976023976023976023976024>23.98</option><option value=24 selected>24</option><option value=25>25</option><option value=29.97002997002997002997002997003>29.97</option><option value=30>30</option><option value=47.952047952047952047952047952048>47.95</option><option value=48>48</option><option value=50>50</option><option value=59.94005994005994005994005994006>59.94</option><option value=60>60</option></select></td></tr>
+	<tr><td>Video Bit-Depth</td><td><select ng-model="vb"><option value=8 selected>8-bit</option><option value=10>10-bit</option><option value=12>12-bit</option></select></td></tr>
+	<tr><td>Video Pixel Format</td><td><select ng-model="pf"><option value=1.00 >4:4:4</option><option value=0.75>4:2:2</option><option value=0.5 selected>4:2:0</option></select></td></tr>
+	<tr><td>Video Duration</td><td><input type="number" ng-model="th" maxlength="3" class="small">:<input type="number" ng-model="tm" maxlength="3" class="small2" max="59" min="0">:<input type="number" ng-model="ts" maxlength="3" class="small2" max="59" min="0"></td></tr>
+	<tr><td>Size of Video is</td><td>{{ (((th*3600)+(tm*60)+ts)*(h*w*f*vb*3*pf))/(8*1024*1024*1024) | number : 2 }} GB</td></tr>
+	<tr><td>Audio Channels</td><td><select ng-model="c"><option value=1>Mono</option><option value=2 selected>Stereo</option><option value=6>5.1 Surround</option><option value=8>7.1 Surround</option></select></td></tr>
+	<tr><td>Audio SampleRate</td><td><select ng-model="s"><option value=44100>44.1k Hz</option><option value=48000 selected>48k Hz</option><option value=96000>96k Hz</option></select></td></tr>
+	<tr><td>Audio Bit-Depth</td><td><select ng-model="ab"><option value=16 selected>16-bit</option><option value=24>24-bit</option><option value=32>32-bit</option><option value=32>32-bit Float</option></select></td></tr>
+	<tr><td>Size of Audio is</td><td> {{ ((c*s*ab)*((th*3600)+(tm*60)+ts))/(8*1024*1024) | number : 2 }} MB</td></tr>
+	</table>
+
+	<p>Total Media Size is: {{ (((h*w*f*vb*3*pf)+(c*s*ab))*((th*3600)+(tm*60)+ts))/(8*1024*1024*1024) | number : 2 }} GB</p>
+</div>
+
+</body>
+</html>
