@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script>
+			function function1() {
+				document.getElementById("1").contentWindow.location.href="1.html";
+			}
+			function function2() {
+				document.getElementById("1").contentWindow.location.href="2.html";
+			}
+			function function3() {
+				document.getElementById("1").contentWindow.location.href=document.getElementById("2").value;
+				document.getElementById("2").value="0";
+			}
+		</script>
+		<style>
+			.customTD:hover
+			{
+			background-color:yellow;
+			}
+		</style>
+	<body>
+		<table width="100%" rules="all" style="border: 10px">
+			<tr>
+				<td class="customTD" onclick="function1()">
+					Home1
+				</td>
+				<td class="customTD" onclick="function2()">
+					Home2
+				</td>
+				<td class="customTD">
+					<select id="2" style="width: 100%" onchange="function3()" class="customTD">
+						<option disabled selected hidden value="0">
+							Tools
+						</option>
+						<option value="uncvideosizecalc.html">
+							Uncompressed Video Size Calculator
+						</option>
+						<option value="scrrescalc.html">
+							Screen Resolution Calculator
+						</option>
+					</select>
+				</td>
+				<td class="customTD">
+					Home4
+				</td>
+			</tr>
+		</table>
+		<iframe style="width: 100%; height: 100%"src="1.html" id="1">
+		</iframe>
+	</body>
+</html>
