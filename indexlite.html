@@ -15,7 +15,8 @@
 		<style>
 			.customTD:hover
 			{
-			background-color:yellow;
+			background-color: rgb(30,144,255);
+			color: white;
 			}
 			@font-face {
 			font-family: din;
@@ -24,9 +25,13 @@
 			}
 			* {
 			font-family: din;
-			}
-			* {
-				font-size: 20px;
+			font-size: 20px;
+			-webkit-touch-callout: none; /* iOS Safari */
+			-webkit-user-select: none; /* Safari */
+			-khtml-user-select: none; /* Konqueror HTML */
+			-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* Internet Explorer/Edge */
+			user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 			}
 		</style>
 	<body>
@@ -39,7 +44,7 @@
 					Home2
 				</td>
 				<td class="customTD">
-					<select id="2" style="width: 100%" onchange="function3()" class="customTD">
+					<select id="2" style="width: 100%" onchange="function3()">
 						<option disabled selected hidden value="0">
 							Tools
 						</option>
